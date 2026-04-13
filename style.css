@@ -132,3 +132,69 @@ input:focus {
     width: 100%;
   }
 }
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Stack rows vertically */
+  .row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Full width inputs */
+  select,
+  input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  /* Buttons */
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Card spacing */
+  .card {
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  /* Subjects spacing */
+  #subjects div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  #subjects span {
+    font-size: 13px;
+  }
+
+  #subjects select {
+    width: 100%;
+  }
+
+  /* Results */
+  .result,
+  .final-result {
+    font-size: 16px;
+  }
+}
