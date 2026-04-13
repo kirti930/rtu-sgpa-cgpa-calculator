@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RTU SGPA & CGPA Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>RTU SGPA & CGPA Calculator</h1>
+    <p class="subtitle">Calculate your academic performance easily</p>
+
+    <!-- ===== SGPA CARD ===== -->
+    <div class="card">
+      <div class="row">
+        <select id="branch">
+          <option value="">Select Branch</option>
+          <option value="CSE">CSE</option>
+          <option value="CS-AI">CS-AI</option>
+          <option value="AIDS">AIDS</option>
+          <option value="IT">IT</option>
+          <option value="ECE">ECE</option>
+          <option value="CIVIL">Civil</option>
+          <option value="MECHANICAL">Mechanical</option>
+          <option value="ELECTRICAL">Electrical</option>
+        </select>
+
+        <select id="semester">
+          <option value="">Select Semester</option>
+          <option value="1">Semester 1</option>
+          <option value="2">Semester 2</option>
+          <option value="3">Semester 3</option>
+<option value="4">Semester 4</option>
+ <option value="5">Semester 5</option>
+<option value="6">Semester 6</option>
+        <option value="7">Semester 7</option>
+<option value="8">Semester 8</option>
+        </select>
+      </div>
+
+      <div id="subjects"></div>
+
+      <button class="primary-btn" onclick="calculateSGPA()">Calculate SGPA</button>
+      <h3 id="sgpaResult" class="result"></h3>
+    </div>
+
+    <!-- ===== MANUAL CGPA CARD ===== -->
+    <!-- ===== CGPA CARD ===== -->
+<div class="card">
+  <h2>CGPA Calculator</h2>
+
+  <div id="cgpaInputs">
+    <div class="row">
+      <select class="semester">
+        <option value="">Select Semester</option>
+        <option value="1">Semester 1</option>
+        <option value="2">Semester 2</option>
+        <option value="3">Semester 3</option>
+<option value="4">Semester 4</option>
+        <option value="5">Semester 5</option>
+<option value="6">Semester 6</option>
+        <option value="7">Semester 7</option>
+<option value="8">Semester 8</option>
+
+      </select>
+
+      <input type="number" class="sgpa" step="0.01" placeholder="SGPA">
+    </div>
+  </div>
+
+  <button class="secondary-btn" onclick="addCgpaRow()">+ Add Semester</button>
+  <button class="primary-btn" onclick="calculateCGPA()">Calculate CGPA</button>
+
+  <h2 id="cgpaResult" class="final-result"></h2>
+</div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
